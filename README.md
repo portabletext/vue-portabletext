@@ -1,6 +1,6 @@
 # @portabletext/vue
 
-[![npm version](https://img.shields.io/npm/v/@portabletext/vue.svg?style=flat-square)](https://www.npmjs.com/package/@portabletext/vue)[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@portabletext/vue?style=flat-square)](https://bundlephobia.com/result?p=@portabletext/vue)[![Build Status](https://img.shields.io/github/actions/workflow/status/portabletext/vue-portabletext/main.yml?branch=main&style=flat-square)](https://github.com/portabletext/vue-portabletext/actions?query=workflow%3Atest)
+[![npm version](https://img.shields.io/npm/v/@portabletext/vue.svg?style=flat-square)](https://www.npmjs.com/package/@portabletext/vue)[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@portabletext/vue?style=flat-square)](https://bundlephobia.com/result?p=@portabletext/vue)
 
 Render [Portable Text](https://portabletext.org/) with Vue.
 

@@ -12,6 +12,7 @@ From:
 <script setup>
 import { SanityBlocks } from 'sanity-blocks-vue-component';
 </script>
+
 <template>
   <SanityBlocks ... />
 </template>
@@ -23,6 +24,7 @@ import { SanityBlocks } from 'sanity-blocks-vue-component';
 <script setup>
 import { PortableText } from '@portabletext/vue';
 </script>
+
 <template>
   <PortableText ... />
 </template>
@@ -101,17 +103,15 @@ import { getImageDimensions } from '@sanity/asset-utils';
 // Barebones lazy-loaded image component
 const SampleImageComponent = ({ value }) => {
   const { width, height } = getImageDimensions(value);
-  return (
-    <img
-      :src="urlBuilder().image(value).width(800).fit('max').auto('format').url()"
-      :alt="value.alt || ' '"
-      loading="lazy"
-      :style="{
-        // Avoid jumping around with aspect-ratio CSS property
-        aspectRatio: width / height,
-      }"
-    />
-  );
+  return h('img', {
+    src: urlBuilder().image(value).width(800).fit('max').auto('format').url(),
+    alt: value.alt || ' ',
+    loading: 'lazy',
+    style: {
+      // Avoid jumping around with aspect-ratio CSS property
+      aspectRatio: width / height,
+    },
+  });
 };
 </script>
 
