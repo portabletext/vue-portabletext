@@ -1,0 +1,81 @@
+{
+  "name": "@portabletext/vue",
+  "version": "0.0.1",
+  "description": "Render Portable Text with Vue",
+  "keywords": [
+    "portable-text"
+  ],
+  "homepage": "https://github.com/portabletext/vue-portabletext#readme",
+  "bugs": {
+    "url": "https://github.com/portabletext/vue-portabletext/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/portabletext/vue-portabletext.git"
+  },
+  "license": "MIT",
+  "author": "Rupert Dunk <rupert@rupertdunk.com> (https://rupertdunk.com)",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/vue-portable-text.mjs",
+        "types": "./dist/vue-portable-text.d.mts"
+      },
+      "require": {
+        "default": "./dist/vue-portable-text.cjs",
+        "types": "./dist/vue-portable-text.d.cts"
+      }
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/vue-portable-text.cjs",
+  "module": "./dist/vue-portable-text.mjs",
+  "types": "./dist/vue-portable-text.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "run-s clean pkg:build",
+    "clean": "rimraf dist coverage .nyc_output",
+    "format": "prettier --write --cache --ignore-unknown .",
+    "pkg:build": "vite build",
+    "postpublish": "npm run clean",
+    "prepublishOnly": "npm run build",
+    "test": "vitest"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-packagejson"
+    ],
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@portabletext/toolkit": "^2.0.4",
+    "@portabletext/types": "^2.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "@vue/compiler-sfc": "^3.3.4",
+    "@vue/test-utils": "^2.4.1",
+    "@vue/tsconfig": "^0.4.0",
+    "happy-dom": "^10.10.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.2",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "rimraf": "^5.0.1",
+    "tslib": "^2.1.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.2",
+    "vitest": "^0.34.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  },
+  "packageManager": "pnpm@8.6.5",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}

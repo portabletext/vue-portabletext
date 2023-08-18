@@ -1,0 +1,13 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["./package.json", "./src"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist",
+
+    "lib": ["ES2016", "DOM"],
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  }
+}
