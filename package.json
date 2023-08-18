@@ -76,6 +76,6 @@
   },
   "packageManager": "pnpm@8.6.5",
   "publishConfig": {
-    "registry": "http://localhost:4873"
+    "access": "public"
   }
 }
