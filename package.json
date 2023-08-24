@@ -51,6 +51,21 @@
     "semi": true,
     "singleQuote": true
   },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "extends": "@sanity/semantic-release-preset"
+  },
   "dependencies": {
     "@portabletext/toolkit": "^2.0.8",
     "@portabletext/types": "^2.0.6"
@@ -77,21 +92,6 @@
     "vue": "^3.3.4"
   },
   "packageManager": "pnpm@8.6.12",
-  "release": {
-    "branches": [
-      "+([0-9])?(.{+([0-9]),x}).x",
-      "main",
-      {
-        "name": "beta",
-        "prerelease": true
-      },
-      {
-        "name": "alpha",
-        "prerelease": true
-      }
-    ],
-    "extends": "@sanity/semantic-release-preset"
-  },
   "publishConfig": {
     "access": "public",
     "provenance": true
