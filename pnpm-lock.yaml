@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^4.1.3
     version: 4.1.3(semantic-release@21.1.0)
   '@vitejs/plugin-vue':
-    specifier: ^4.3.1
-    version: 4.3.1(vite@4.4.9)(vue@3.3.4)
+    specifier: ^4.3.3
+    version: 4.3.3(vite@4.4.9)(vue@3.3.4)
   '@vue/compiler-sfc':
     specifier: ^3.3.4
     version: 3.3.4
@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^0.4.0
     version: 0.4.0
   happy-dom:
-    specifier: ^10.10.2
-    version: 10.10.2
+    specifier: ^10.11.0
+    version: 10.11.0
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^21.1.0
     version: 21.1.0
   tslib:
-    specifier: ^2.1.0
-    version: 2.1.0
+    specifier: ^2.6.2
+    version: 2.6.2
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
@@ -63,7 +63,7 @@ devDependencies:
     version: 3.5.2(typescript@5.1.6)(vite@4.4.9)
   vitest:
     specifier: ^0.34.2
-    version: 0.34.2(happy-dom@10.10.2)
+    version: 0.34.2(happy-dom@10.11.0)
 
 packages:
 
@@ -517,7 +517,7 @@ packages:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /@pnpm/config.env-replace@1.1.0:
@@ -797,8 +797,8 @@ packages:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
 
-  /@vitejs/plugin-vue@4.3.1(vite@4.4.9)(vue@3.3.4):
-    resolution: {integrity: sha512-tUBEtWcF7wFtII7ayNiLNDTCE1X1afySEo+XNVMNkFXaThENyCowIEX095QqbJZGTgoOcSVDJGlnde2NG4jtbQ==}
+  /@vitejs/plugin-vue@4.3.3(vite@4.4.9)(vue@3.3.4):
+    resolution: {integrity: sha512-ssxyhIAZqB0TrpUg6R0cBpCuMk9jTIlO1GNSKKQD6S8VjnXi6JXKfUXjSsxey9IwQiaRGsO1WnW9Rkl1L6AJVw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
@@ -2039,8 +2039,8 @@ packages:
       uglify-js: 3.17.4
     dev: true
 
-  /happy-dom@10.10.2:
-    resolution: {integrity: sha512-oge5nmnolkX9giU3wmv/qQ/s5AN4L3XGCRvw7Q9a6lnmRNKvVZYWinw0L9f+ZNE0P7BzbcHvlIwHEcfMCkU72A==}
+  /happy-dom@10.11.0:
+    resolution: {integrity: sha512-CmUT4LOLzvAsbYqgTJESrPyvF0gxLDkDG/KK1o/HYU7+c9o/VVIKXl3feJZnuCYbGqemw7meiQaZcL4SMgn1jQ==}
     dependencies:
       css.escape: 1.5.1
       entities: 4.5.0
@@ -3880,7 +3880,7 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@pkgr/utils': 2.4.2
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /temp-dir@3.0.0:
@@ -3953,12 +3953,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /tslib@2.1.0:
-    resolution: {integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==}
-    dev: true
-
-  /tslib@2.6.1:
-    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
+  /tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
   /type-detect@4.0.8:
@@ -4207,7 +4203,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.34.2(happy-dom@10.10.2):
+  /vitest@0.34.2(happy-dom@10.11.0):
     resolution: {integrity: sha512-WgaIvBbjsSYMq/oiMlXUI7KflELmzM43BEvkdC/8b5CAod4ryAiY2z8uR6Crbi5Pjnu5oOmhKa9sy7uk6paBxQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -4251,7 +4247,7 @@ packages:
       cac: 6.7.14
       chai: 4.3.7
       debug: 4.3.4
-      happy-dom: 10.10.2
+      happy-dom: 10.11.0
       local-pkg: 0.4.3
       magic-string: 0.30.2
       pathe: 1.1.1
