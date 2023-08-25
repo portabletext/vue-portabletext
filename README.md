@@ -14,6 +14,8 @@ Note that for terseness, [render functions](https://vuejs.org/guide/extras/rende
 - [Basic usage](#basic-usage)
 - [Styling](#styling-the-output)
 - [Customizing components](#customizing-components)
+- [Single file components](#single-file-components)
+  - [Defining props with TypeScript](#defining-props-with-typescript)
 - [Available components](#available-components)
   - [types](#types)
   - [marks](#marks)
@@ -22,7 +24,7 @@ Note that for terseness, [render functions](https://vuejs.org/guide/extras/rende
   - [listItem](#listItem)
   - [hardBreak](#hardBreak)
   - [unknown components](#unknownMark)
-- [Disable warnings / Handling unknown types](#disabling-warnings--handling-unknown-types)
+- [Disabling warnings / handling unknown types](#disabling-warnings--handling-unknown-types)
 - [Rendering Plain Text](#rendering-plain-text)
 - [Typing Portable Text](#typing-portable-text)
 
@@ -85,6 +87,54 @@ const myPortableTextComponents = {
 
 <template>
   <PortableText :value="props.value" :components="myPortableTextComponents" />
+</template>
+```
+
+## Single file components
+
+Single file components can be used as custom renderers, and will receive the props listed below. In most components, the `value` prop will be the most frequently accessed. It is recommended that you define these props in your component, or you may want to [disable attribute inheritance](https://vuejs.org/guide/components/attrs.html#disabling-attribute-inheritance) if they are unused.
+
+| Prop       | Description                                            |
+| ---------- | ------------------------------------------------------ |
+| value      | Data associated with the node, e.g. the raw JSON value |
+| index      | Index with respect to the block’s parent               |
+| isInline   | Whether or not the node is “inline”                    |
+| renderNode | Internal rendering function, rarely needed             |
+
+### Defining props with TypeScript
+
+When using TypeScript, you can use `defineProps` with the `PortableTextComponentProps` type to prevent boilerplate prop definitions. Pass the structure of the `value` prop as a generic type parameter.
+
+Example of a single file component to render some custom buttons with an index and button text from the following PortableText:
+
+```json
+[
+  {
+    "_type": "button",
+    "_key": "abc",
+    "text": "My Button"
+  },
+  {
+    "_type": "button",
+    "_key": "def",
+    "text": "Your Button"
+  }
+]
+```
+
+```vue
+<script lang="ts" setup>
+import type { PortableTextComponentProps } from '@portabletext/vue';
+
+defineProps<
+  PortableTextComponentProps<{
+    text: string;
+  }>
+>();
+</script>
+
+<template>
+  <button>{{ index + 1 }}: {{ value.text }}</button>
 </template>
 ```
 

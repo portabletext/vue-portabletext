@@ -102,12 +102,11 @@ From:
 </template>
 ```
 
-## New component properties
+## Component Props
 
-The properties for custom components (previously "serializers") have changed slightly:
+The props passed to custom components (previously "serializers") have changed. Previously, all properties of the block or mark object (excluding `_key` and `_type`) were flattened and passed to components as props.
 
-- Blocks: `node` has been renamed to `value`
-- Marks: `mark` has been renamed to `value`
+Block or mark properties are now passed via a `value` prop. This better aligns the Vue renderer with those built for other frameworks. Refer to the [readme](https://github.com/portabletext/vue-portabletext/blob/main/README.md#single-file-components) to see the list of props passed and how to write component prop definitions.
 
 ## Images aren't handled by default anymore
 
