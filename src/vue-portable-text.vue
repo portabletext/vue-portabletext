@@ -14,7 +14,7 @@ function noop() {
 }
 
 const props = withDefaults(defineProps<PortableTextProps<B>>(), {
-  onMissingComponent: printWarning,
+  onMissingComponent: () => printWarning,
 });
 
 const handleMissingComponent = props.onMissingComponent || noop;
