@@ -18,12 +18,12 @@
   "exports": {
     ".": {
       "import": {
-        "default": "./dist/vue-portable-text.mjs",
-        "types": "./dist/vue-portable-text.d.mts"
+        "types": "./dist/vue-portable-text.d.mts",
+        "default": "./dist/vue-portable-text.mjs"
       },
       "require": {
-        "default": "./dist/vue-portable-text.cjs",
-        "types": "./dist/vue-portable-text.d.cts"
+        "types": "./dist/vue-portable-text.d.cts",
+        "default": "./dist/vue-portable-text.cjs"
       }
     },
     "./*": "./*"
