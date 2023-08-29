@@ -5,6 +5,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/portabletext/vue-portabletext/compare/v1.0.3...v1.0.4) (2023-08-29)
+
+### Bug Fixes
+
+- move default exports to last position ([63eecea](https://github.com/portabletext/vue-portabletext/commit/63eeceabbc68506fdd889f01d6242875f275e965))
+
 ## [1.0.3](https://github.com/portabletext/vue-portabletext/compare/v1.0.2...v1.0.3) (2023-08-25)
 
 ### Bug Fixes
