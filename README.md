@@ -148,7 +148,7 @@ An object of Vue components that renders different types of objects that might a
 
 Use the `isInline` property to check whether or not this is an inline object or a block.
 
-The object has the shape `{typeName: ReactComponent}`, where `typeName` is the value set in individual `_type` attributes.
+The object has the shape `{typeName: VueComponent}`, where `typeName` is the value set in individual `_type` attributes.
 
 Example of rendering a custom `image` object:
 
@@ -226,7 +226,7 @@ const components: PortableTextComponents = {
 
 ### `block`
 
-An object of Vue components that renders portable text blocks with different `style` properties. The object has the shape `{styleName: ReactComponent}`, where `styleName` is the value set in individual `style` attributes on blocks (`normal` being the default).
+An object of Vue components that renders portable text blocks with different `style` properties. The object has the shape `{styleName: VueComponent}`, where `styleName` is the value set in individual `style` attributes on blocks (`normal` being the default).
 
 ```ts
 // `components` object you'll pass to PortableText
@@ -269,7 +269,7 @@ The `list` property can also be set to a single Vue component, which would handl
 
 ### `listItem`
 
-Object of Vue components used to render different list item styles. The object has the shape `{listItemType: ReactComponent}`, where `listItemType` is the value set in individual `listItem` attributes on blocks.
+Object of Vue components used to render different list item styles. The object has the shape `{listItemType: VueComponent}`, where `listItemType` is the value set in individual `listItem` attributes on blocks.
 
 ```ts
 const components = {
