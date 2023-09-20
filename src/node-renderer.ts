@@ -4,10 +4,10 @@ import type {
   MissingComponentHandler,
   NodeRenderer,
   PortableTextVueComponents,
-  ReactPortableTextList,
   Serializable,
   SerializedBlock,
   VueNode,
+  VuePortableTextList,
 } from './types';
 import type {
   PortableTextBlock,
@@ -115,7 +115,7 @@ export const getNodeRenderer = (
     );
   }
 
-  function renderList(node: ReactPortableTextList, index: number, key: string) {
+  function renderList(node: VuePortableTextList, index: number, key: string) {
     const children = node.children.map((child, childIndex) =>
       renderNode({
         node: child._key ? child : { ...child, _key: `li-${index}-${childIndex}` },
