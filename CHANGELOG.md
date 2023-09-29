@@ -5,6 +5,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/portabletext/vue-portabletext/compare/v1.0.4...v1.0.5) (2023-09-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @portabletext/toolkit to ^2.0.9 ([#20](https://github.com/portabletext/vue-portabletext/issues/20)) ([d5c86ff](https://github.com/portabletext/vue-portabletext/commit/d5c86ffab2ca8e1a2aecdbf0229c6e819b250dbc))
+* **deps:** update dependency @portabletext/types to ^2.0.7 ([#21](https://github.com/portabletext/vue-portabletext/issues/21)) ([fa2d965](https://github.com/portabletext/vue-portabletext/commit/fa2d96548b879eb0257d0fa4f820abd2f7f50890))
+
 ## [1.0.4](https://github.com/portabletext/vue-portabletext/compare/v1.0.3...v1.0.4) (2023-08-29)
 
 ### Bug Fixes
