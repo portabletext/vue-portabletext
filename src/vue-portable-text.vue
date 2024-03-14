@@ -17,21 +17,23 @@ const props = withDefaults(defineProps<PortableTextProps<B>>(), {
   onMissingComponent: () => printWarning,
 });
 
-const handleMissingComponent = props.onMissingComponent || noop;
+const Render = () => {
+  const handleMissingComponent = props.onMissingComponent || noop;
 
-const blocks = Array.isArray(props.value) ? props.value : [props.value];
+  const blocks = Array.isArray(props.value) ? props.value : [props.value];
 
-const nested = nestLists(blocks, props.listNestingMode || LIST_NEST_MODE_HTML);
+  const nested = nestLists(blocks, props.listNestingMode || LIST_NEST_MODE_HTML);
 
-const components = props.components
-  ? mergeComponents(defaultComponents, props.components)
-  : defaultComponents;
+  const components = props.components
+    ? mergeComponents(defaultComponents, props.components)
+    : defaultComponents;
 
-const renderNode = getNodeRenderer(components, handleMissingComponent);
+  const renderNode = getNodeRenderer(components, handleMissingComponent);
 
-const rendered = nested.map((node, index) =>
-  renderNode({ node: node, index, isInline: false, renderNode }),
-);
+  const rendered = nested.map((node, index) =>
+    renderNode({ node: node, index, isInline: false, renderNode }),
+  );
 
-const Render = () => rendered;
+  return rendered;
+};
 </script>
