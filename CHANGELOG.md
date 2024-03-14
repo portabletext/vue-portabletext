@@ -5,6 +5,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/portabletext/vue-portabletext/compare/v1.0.6...v1.0.7) (2024-03-14)
+
+
+### Bug Fixes
+
+* react to props ([#40](https://github.com/portabletext/vue-portabletext/issues/40)) ([24076f4](https://github.com/portabletext/vue-portabletext/commit/24076f4d6e758ba224ed62e9de6b32ab88efa74a))
+
 ## [1.0.6](https://github.com/portabletext/vue-portabletext/compare/v1.0.5...v1.0.6) (2023-10-10)
 
 
