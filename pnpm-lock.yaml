@@ -9,7 +9,7 @@ dependencies:
     specifier: ^2.0.11
     version: 2.0.11
   '@portabletext/types':
-    specifier: ^2.0.8
+    specifier: ^2.0.9
     version: 2.0.9
   vue:
     specifier: ^3.3.4
