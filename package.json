@@ -74,7 +74,7 @@
   "peerDependencies": {
     "vue": "^3.3.4"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.6",
   "publishConfig": {
     "access": "public",
     "provenance": true
