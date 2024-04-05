@@ -1,6 +1,6 @@
 {
   "name": "@portabletext/vue",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Render Portable Text with Vue",
   "keywords": [
     "portable-text"
