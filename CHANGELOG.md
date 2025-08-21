@@ -1,5 +1,11 @@
 # @portabletext/vue
 
+## 1.0.14
+
+### Patch Changes
+
+- [#75](https://github.com/portabletext/vue-portabletext/pull/75) [`27278b9`](https://github.com/portabletext/vue-portabletext/commit/27278b9e43b222b775f9003892c2bfa14fbfac77) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @portabletext/types to ^2.0.14
+
 ## 1.0.13
 
 ### Patch Changes
