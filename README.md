@@ -213,8 +213,7 @@ const components: PortableTextComponents = {
     // Ex. 2: rendering a custom `link` annotation
     link: ({ value }, { slots }) => {
       const target = (value?.href || '').startsWith('http') ? '_blank' : undefined;
-      return;
-      h(
+      return h(
         'a',
         { href: value?.href, target, rel: target === '_blank' && 'noindex nofollow' },
         slots.default?.(),
