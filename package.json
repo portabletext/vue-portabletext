@@ -53,7 +53,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@portabletext/toolkit": "^2.0.18",
+    "@portabletext/toolkit": "^4.0.0",
     "@portabletext/types": "^2.0.14"
   },
   "devDependencies": {
