@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@portabletext/toolkit':
-        specifier: ^2.0.18
-        version: 2.0.18
+        specifier: ^3.0.3
+        version: 3.0.3
       '@portabletext/types':
         specifier: ^2.0.14
         version: 2.0.14
@@ -359,12 +359,16 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@portabletext/toolkit@2.0.18':
-    resolution: {integrity: sha512-m3v2WwKQTNNk5BFZlUuPuCW0Zi6iDSpwrium4Ej5L2FHDXhFuwAyEMPXDrvwPvqjES/oJzcwmdKLMhYa44T9BQ==}
+  '@portabletext/toolkit@3.0.3':
+    resolution: {integrity: sha512-EI59/l4E0E5wCyWUzvW1FPKWfqDsbebCnCf9ZDHjXGH95X4EORlCtnPuA79PpKaHv0LTChORy55trRzW6tYnOQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
 
   '@portabletext/types@2.0.14':
     resolution: {integrity: sha512-LnAanK3vkn30gMqtGv5QoR0QT3fioOgqh1SBIiquAbtBcoETxhdvCfEMnv5CAuFiZMFLyRIgfpjWyIIVA2yOjQ==}
+    engines: {node: ^14.13.1 || >=16.0.0 || >=18.0.0}
+
+  '@portabletext/types@2.0.15':
+    resolution: {integrity: sha512-2e6i2gSQsrA/5OL5Gm4/9bxB9MNO73Fa47zj+0mT93xkoQUCGCWX5fZh1YBJ86hszaRYlqvqG08oULxvvPPp/Q==}
     engines: {node: ^14.13.1 || >=16.0.0 || >=18.0.0}
 
   '@rollup/pluginutils@5.1.0':
@@ -864,6 +868,7 @@ packages:
   glob@10.3.12:
     resolution: {integrity: sha512-TCNv8vJ+xz4QiqTpfOJA7HvYv+tNIRHKfUWw/q+v2jdgN4ebz+KY9tGx5J4rHP0o84mNP+ApH66HRX8us3Khqg==}
     engines: {node: '>=16 || 14 >=14.17'}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   globby@11.1.0:
@@ -1969,11 +1974,13 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@portabletext/toolkit@2.0.18':
+  '@portabletext/toolkit@3.0.3':
     dependencies:
-      '@portabletext/types': 2.0.14
+      '@portabletext/types': 2.0.15
 
   '@portabletext/types@2.0.14': {}
+
+  '@portabletext/types@2.0.15': {}
 
   '@rollup/pluginutils@5.1.0(rollup@4.14.0)':
     dependencies:
