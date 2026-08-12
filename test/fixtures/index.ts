@@ -27,6 +27,7 @@ import customBlockType from './050-custom-block-type';
 import customMarks from './052-custom-marks';
 import overrideDefaultMarks from './053-override-default-marks';
 import listIssue from './060-list-issue';
+import skippedListLevels from './063-skipped-list-levels';
 import missingMarkComponent from './061-missing-mark-component';
 import customBlockTypeWithChildren from './062-custom-block-type-with-children';
 
@@ -62,4 +63,5 @@ export {
   overrideDefaultMarks,
   listIssue,
   missingMarkComponent,
+  skippedListLevels,
 };

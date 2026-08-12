@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@portabletext/toolkit':
-        specifier: ^2.0.18
-        version: 2.0.18
+        specifier: ^6.0.0
+        version: 6.0.0
       '@portabletext/types':
-        specifier: ^2.0.14
-        version: 2.0.14
+        specifier: ^4.0.2
+        version: 4.0.2
       vue:
         specifier: ^3.3.4
         version: 3.4.21(typescript@5.4.5)
@@ -359,13 +359,13 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@portabletext/toolkit@2.0.18':
-    resolution: {integrity: sha512-m3v2WwKQTNNk5BFZlUuPuCW0Zi6iDSpwrium4Ej5L2FHDXhFuwAyEMPXDrvwPvqjES/oJzcwmdKLMhYa44T9BQ==}
-    engines: {node: ^14.13.1 || >=16.0.0}
+  '@portabletext/toolkit@6.0.0':
+    resolution: {integrity: sha512-+qSqe0KnefuZfNLUhzQRTpbSKxslZof+3pNwxg0DC8dfZ1yLKyyBUw6iR7EpDL+SJlrnpiBfEcfmEuFitK1NSQ==}
+    engines: {node: '>=22.12'}
 
-  '@portabletext/types@2.0.14':
-    resolution: {integrity: sha512-LnAanK3vkn30gMqtGv5QoR0QT3fioOgqh1SBIiquAbtBcoETxhdvCfEMnv5CAuFiZMFLyRIgfpjWyIIVA2yOjQ==}
-    engines: {node: ^14.13.1 || >=16.0.0 || >=18.0.0}
+  '@portabletext/types@4.0.2':
+    resolution: {integrity: sha512-djfIGU9n6DRrunlvj2nIDAp17URo/nA4jSXGvf+Gupx8NLLy9fmJBZ3GL8yhqn9lSVc+cKCharjOa3aOBnWbRw==}
+    engines: {node: '>=20.19 <22 || >=22.12'}
 
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
@@ -1969,11 +1969,11 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@portabletext/toolkit@2.0.18':
+  '@portabletext/toolkit@6.0.0':
     dependencies:
-      '@portabletext/types': 2.0.14
+      '@portabletext/types': 4.0.2
 
-  '@portabletext/types@2.0.14': {}
+  '@portabletext/types@4.0.2': {}
 
   '@rollup/pluginutils@5.1.0(rollup@4.14.0)':
     dependencies:
