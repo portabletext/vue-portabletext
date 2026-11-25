@@ -15,7 +15,7 @@ export default {
     '<pre data-language="javascript">',
     '<code>',
     "const foo = require('foo')\n\n",
-    "foo('hi there', (err, thing) => {\n",
+    "foo('hi there', (err, thing) =&gt; {\n",
     '  console.log(err)\n',
     '})\n',
     '</code></pre>',
