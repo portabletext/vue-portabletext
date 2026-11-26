@@ -1,5 +1,15 @@
 # @portabletext/vue
 
+## 2.0.1
+
+### Patch Changes
+
+- [#97](https://github.com/portabletext/vue-portabletext/pull/97) [`e96b20e`](https://github.com/portabletext/vue-portabletext/commit/e96b20ebc909cb2a5d6c4b822adede4f6cad647e) Thanks [@stipsan](https://github.com/stipsan)! - Render links with an unsafe `href` (such as `javascript:`) as plain text instead of an anchor
+
+- [#96](https://github.com/portabletext/vue-portabletext/pull/96) [`25e136a`](https://github.com/portabletext/vue-portabletext/commit/25e136a90679773d1246f80f0ff5b9bf0b7038fd) Thanks [@christianhg](https://github.com/christianhg)! - fix: list `vue` in the npm keywords of @portabletext/vue
+
+  npm search and keyword filters now find it under `vue`.
+
 ## 2.0.0
 
 ### Major Changes
