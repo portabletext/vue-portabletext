@@ -43,12 +43,8 @@ import { PortableText } from '@portabletext/vue';
 
 <template>
   <PortableText
-    :value="[
-      /* array of portable text blocks */
-    ]"
-    :components="{
-      /* optional object of custom components to use */
-    }"
+    :value="[/* array of portable text blocks */]"
+    :components="{/* optional object of custom components to use */}"
   />
 </template>
 ```
@@ -332,17 +328,10 @@ const onMissingComponent = (message, options) => {
 </script>
 
 <template>
-  <PortableText
-    :value="[
-      /* array of portable text blocks */
-    ]"
-    :onMissingComponent="false"
-  />
+  <PortableText :value="[/* array of portable text blocks */]" :onMissingComponent="false" />
   <!-- or, pass the function: -->
   <PortableText
-    :value="[
-      /* array of portable text blocks */
-    ]"
+    :value="[/* array of portable text blocks */]"
     :onMissingComponent="onMissingComponent"
   />
 </template>
