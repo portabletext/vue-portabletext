@@ -1,4 +1,5 @@
 import { h } from 'vue';
+import { uriLooksSafe } from '@portabletext/toolkit';
 import type { TypedObject } from '@portabletext/types';
 import type { PortableTextMarkComponent } from '../types';
 import { basicElement } from './basic';
@@ -9,7 +10,9 @@ interface DefaultLink extends TypedObject {
 }
 
 const link: PortableTextMarkComponent<DefaultLink> = ({ value }, { slots }) =>
-  h('a', { href: value?.href }, slots.default?.());
+  value?.href && !uriLooksSafe(value.href)
+    ? slots.default?.()
+    : h('a', { href: value?.href }, slots.default?.());
 
 const underlineStyle = { textDecoration: 'underline' };
 

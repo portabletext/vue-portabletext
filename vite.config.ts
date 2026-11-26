@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [vue(), dts({ rollupTypes: true })],
+  plugins: [vue(), dts({ bundleTypes: true })],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),

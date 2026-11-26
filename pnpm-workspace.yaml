@@ -1,0 +1,4 @@
+minimumReleaseAgeExclude:
+  - '@portabletext/toolkit@6.1.1'
+  - '@portabletext/types@4.0.3'
+  - vite@8.4.0
