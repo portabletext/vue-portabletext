@@ -38,11 +38,7 @@ From:
 
 ```vue
 <template>
-  <SanityBlocks
-    :blocks="[
-      /*...*/
-    ]"
-  />
+  <SanityBlocks :blocks="[/*...*/]" />
 </template>
 ```
 
@@ -50,11 +46,7 @@ From:
 
 ```vue
 <template>
-  <PortableText
-    :value="[
-      /*...*/
-    ]"
-  />
+  <PortableText :value="[/*...*/]" />
 </template>
 ```
 
@@ -68,15 +60,9 @@ From:
 <template>
   <SanityBlocks
     :serializers="{
-      marks: {
-        /* ... */
-      },
-      types: {
-        /* ... */
-      },
-      list: {
-        /* ... */
-      },
+      marks: {/* ... */},
+      types: {/* ... */},
+      list: {/* ... */},
     }"
   />
 </template>
@@ -88,15 +74,9 @@ From:
 <template>
   <PortableText
     :components="{
-      marks: {
-        /* ... */
-      },
-      types: {
-        /* ... */
-      },
-      list: {
-        /* ... */
-      },
+      marks: {/* ... */},
+      types: {/* ... */},
+      list: {/* ... */},
     }"
   />
 </template>
